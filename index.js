@@ -23,6 +23,10 @@ cancel.addEventListener("click", function () {
   localStorage.removeItem("nome");
   div.innerText = "";
 });
+window.onload = function () {
+  elementoMostrato.textContent = localStorage.getItem("ut1");
+  div.innerText = "";
+};
 //---------------------------------------------------------------------------------------------------------------//
 function updateCounter() {
   let counter = sessionStorage.getItem("counter");
