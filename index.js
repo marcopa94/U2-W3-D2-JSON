@@ -21,6 +21,7 @@ form.onsubmit = function (e) {
 };
 cancel.addEventListener("click", function () {
   localStorage.removeItem("nome");
+  div.innerText = "";
 });
 //---------------------------------------------------------------------------------------------------------------//
 function updateCounter() {
