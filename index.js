@@ -11,6 +11,7 @@ class Utente {
     this.nome = nome3;
   }
 }
+
 form.onsubmit = function (e) {
   e.preventDefault();
   const ut1 = input.value;
@@ -30,11 +31,6 @@ window.onload = function () {
 //---------------------------------------------------------------------------------------------------------------//
 function updateCounter() {
   let counter = sessionStorage.getItem("counter");
-  if (!counter) {
-    counter = 0;
-  } else {
-    counter = parseInt(counter);
-  }
 
   counter++;
   sessionStorage.setItem("counter", counter);
@@ -44,6 +40,5 @@ function updateCounter() {
 
 window.onload = function () {
   updateCounter();
-
   setInterval(updateCounter, 1000);
 };
