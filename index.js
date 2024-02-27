@@ -17,11 +17,12 @@ form.onsubmit = function (e) {
 
   localStorage.setItem("nome", JSON.stringify(ut1));
   div.innerText = ut1;
+  input.value = " ";
 };
 cancel.addEventListener("click", function () {
   localStorage.removeItem("nome");
 });
-
+//---------------------------------------------------------------------------------------------------------------//
 function updateCounter() {
   let counter = sessionStorage.getItem("counter");
   if (!counter) {
